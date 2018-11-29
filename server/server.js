@@ -27,7 +27,7 @@ app.post('/todos', (req, res) => {
 });
 
 
-pp.listen(3000, () => {
+app.listen(3000, () => {
     console.log('started on port 3000');
 });
 
@@ -54,4 +54,4 @@ pp.listen(3000, () => {
 //     console.log("unable to save user");
 // });
 
-
+module.exports = {app};
